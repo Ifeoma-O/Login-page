@@ -1,5 +1,5 @@
 body{
-background: url(../order-summary-component-main/images/background-desktop.svg);
+background: url(./images/background-desktop.svg);
 background-size: cover;
 background-repeat:unset;
 }
@@ -20,7 +20,7 @@ box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.288);;
 }
 
 .picture{
-background: url(../order-summary-component-main/images/illustration-hero.svg);
+background: url(./images/illustration-hero.svg);
 height: 25vh;
 border-top-left-radius: 1rem;
 border-top-right-radius: 1rem;
