@@ -1,0 +1,75 @@
+body{
+background: url(../order-summary-component-main/images/background-desktop.svg);
+background-size: cover;
+background-repeat:unset;
+}
+
+@font-face {
+    font-family: RedHat;
+    src: url(../projects/fonts/RedHat/RedHatDisplay-Bold.ttf);
+}
+
+.main{
+width: 300px;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.288);;
+}
+
+.picture{
+background: url(../order-summary-component-main/images/illustration-hero.svg);
+height: 25vh;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+}
+
+.content{
+background-color: white;
+text-align: center;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+padding-bottom: 1rem;
+font-family: "RedHat";
+}
+
+#signup{
+margin: 0;
+padding: 1rem;
+}
+
+input{
+padding: .6rem;
+margin: .5rem 0;
+outline: none;
+border: 1px solid black;
+border-radius: .5rem;
+}
+
+.btn {
+background-color: hsl(245, 75%, 52%);
+color: #fff;
+box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.288);;
+padding: .5rem;
+margin: 1rem;
+border-radius: .6rem;
+border: none;
+width: 70%;
+font-family: "RedHat";
+}
+
+.btn:active{
+background-color: hsl(224, 23%, 55%);
+}
+
+.btn:hover {
+  transform: translateY(-0.1rem) scale(1.03);
+}
+
+#name-err, #email-err, #password-err, #password-confirm-err, #name-empty{
+color: red;
+display: block;
+font-size: 12px;
+}

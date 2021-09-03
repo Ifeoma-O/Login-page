@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="../WEB/font/icofont/icofont.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="main">
+        <div class="picture"> 
+        </div>
+        <div class="content">
+        <h2 id="signup">Sign Up</h2>
+            <form action="successful.html" class="form" onsubmit="return validateForm()">
+                <div class="input">
+                    <span class="icofont-user icofontForm"></span>
+                    <input type="text" class="contact" name="name" id="name" placeholder="Enter your full name" required>
+                    <span id="name-err"></span>
+                </div>
+                <div class="input">
+                    <span class="icofont-email icofontForm"></span>
+                    <input type="email" class="contact" id="email" name="email" placeholder="Enter your email" required>
+                    <span id="email-err"></span>
+                </div>
+                <div class="input">
+                    <span class="icofont-ui-password icofontForm"></span>
+                    <input type="password" class="contact" id="password" placeholder="Enter password">
+                    <span id="password-err"></span>
+                </div>
+                <div class="input">
+                    <span class="icofont-ui-password icofontForm"></span>
+                    <input type="password" class="contact" id="password-confirm" placeholder="Confirm password">
+                    <span id="password-confirm-err"></span>
+                </div>
+                <input type="submit" class="btn" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+function validateForm(){
+var pw1 = document.getElementById("password").value;
+var pw2 = document.getElementById("password-confirm").value;
+var name = document.getElementById("name").value;
+var mail = document.getElementById("email").value;
+
+//check empty name field
+
+if (!isNaN(name)) {
+    document.getElementById("name-err").innerHTML = "Only characters are allowed";
+    return false;
+}
+
+    if(pw1 != pw2){
+        document.getElementById("password-confirm-err").innerHTML = "Passwords do not match";
+        return false;
+    }
+}
+
+</script>
+</html>
